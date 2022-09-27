@@ -1,0 +1,60 @@
+:root{
+    --color-grayblue: #E7E7E7;
+    --color-black: #0a0a0c;
+    --color-darkblue: #485696;
+    --color-beige: #F9C784;
+    --color-orange: #fc7a1e;
+    --color-darkorange: #F24C00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.activities button{
+    font-family: roboto;
+    background-color: #fc7a1e ; 
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.activities button:hover{
+    background-color: #F24C00 ; 
+    color: #E7E7E7;
+}
+
+
+h1{
+    font-family: poppins;
+    font-weight: 600;
+}
+
+h2{
+    font-family: roboto;
+    font-weight: 500; 
+}
+
+h3,h4{
+    font-family: 'Lora';
+    font-style: italic;
+    letter-spacing: 0.8px;
+}
+
+p{
+    font-family: lora;
+    font-weight: 500;
+}
+
+
+
