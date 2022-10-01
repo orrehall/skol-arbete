@@ -15,7 +15,7 @@ header{
     grid-column: 1/2;
     /* border: 1px solid black;  */
     margin-bottom: 20px;
-    background-color: #485696;
+    background-color: var(--color-darkblue);
 }
 
 .main-section{
@@ -36,7 +36,7 @@ header{
 footer{
     grid-row: 4/5;
     grid-column: 1/2;
-    background-color: #485696;
+    background-color : var(--color-darkblue);
 }
 
 /*  -----------------------General structure of main section --------------------------------*/
@@ -62,13 +62,13 @@ footer{
 .activities-header{
     grid-row: 2/3;
     grid-column: 1/2;
-    background-color: gray;
+    background-color: var(--color-gray);
 }
 
 .activities{
     grid-row: 3/4;
     grid-column: 1/2;
-    background-color: #E7E7E7;
+    background-color: var(--color-grayblue);
     display: flex;
     justify-content: space-around; 
     margin-bottom: 20px;
@@ -77,3 +77,106 @@ footer{
 }
 
 /*  -----------------------General structure of main section --------------------------------*/
+
+.main-container h1{
+    text-align: center;
+    font-family: poppins;
+    margin-top: 0;
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.main-container h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: roboto;
+    font-weight: 500;
+}
+
+.activities-header-picture h1, 
+.activities-header-picture h2,
+.activity  h2,
+.activity  h3,
+.activity p{
+    color: var(--color-white);
+}
+
+.activity{
+    border: 1px solid var(--color-black); 
+    background-color: var(--color-darkblue); 
+    border-radius: 20px;
+    width: 25%;
+    text-align: center;
+    margin: 2% 1%;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+ }
+
+ .activity-picture{
+    height: 100px;
+    border-radius:  20px  20px 0  0;
+    /* background-color: #485696; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-picture img{
+    max-width: 90px;
+    max-height: 90px;
+    margin: 0 auto
+}
+
+.activity-info{
+    margin: 0px 5px 20px 5px;
+}
+
+.activity  h2{
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+/*  ----------------------- Newsletter section --------------------------------*/
+
+.newsletter{
+    background-color: var(--color-gray);
+    font-family: Poppins;
+    height: 150px;
+    width: 500px;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+
+}
+
+.newsletter h2{
+    padding-top: 20px;
+}
+
+
+ .newsletter button{
+    font-family: roboto;
+    background-color: #fc7a1e ; 
+    height: 38px;
+    border: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 0 20px 20px 0;
+
+}
+
+section.newsletter form input{
+    width: 200px;
+    height: 38px;
+    max-width: 80%;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    padding-left: 10px;
+}
