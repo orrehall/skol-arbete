@@ -39,7 +39,7 @@ footer{
     background-color : var(--color-darkblue);
 }
 
-/*  -----------------------General structure of main section --------------------------------*/
+/*  ----------------------- General structure of main section - Grid --------------------------------*/
 
 .main-container{
     width: 100%;
@@ -71,20 +71,18 @@ footer{
     background-color: var(--color-grayblue);
     display: flex;
     justify-content: space-around; 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     flex-wrap: wrap; 
     height: auto; 
 }
 
-/*  -----------------------General structure of main section --------------------------------*/
+/*  -----------------------General structure of main section - Grid --------------------------------*/
 
 .main-container h1{
-    text-align: center;
-    font-family: poppins;
+    /* text-align: center; */
     margin-top: 0;
     padding-top: 25px;
-    font-weight: 600;
-    font-size: 36px;
+    /* font-size: 36px; */
 }
 
 .main-container h2{
@@ -162,21 +160,107 @@ footer{
 
 
  .newsletter button{
-    font-family: roboto;
-    background-color: #fc7a1e ; 
+/*     font-family: roboto;
+    background-color: var(--color-orange) ;  */
     height: 38px;
     border: none;
+/*     
     font-size: 20px;
-    padding: 5px 20px;
+    padding: 5px 20px; */
+
     border-radius: 0 20px 20px 0;
 
 }
+
+/* .newsletter button:hover{
+    background-color: var(--color-darkorange); 
+} */
 
 section.newsletter form input{
     width: 200px;
     height: 38px;
     max-width: 80%;
     border-radius: 20px 0 0 20px;
-    border: none;
     padding-left: 10px;
+}
+
+
+/*-------------------------------------------------------------
+*************************   MEDIA QUERIES  ********************
+--------------------------------------------------------------*/
+@media screen and (min-width: 1200px)
+{
+    .main-container{
+        /* background-color: rgb(208, 169, 245);  */
+        width: 80%; 
+        grid-template-rows: 1fr [photo] 0.3fr [header] 2fr [activities];
+    }  
+
+}
+
+/*-------------------------------------------------------------
+/*                         Small desktops
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px)
+{
+    .main-container{
+        /* background-color: rgb(208, 169, 245);   */
+        /* width: 90%;  */
+        grid-template-rows: 0.8fr [photo] 0.3fr [header] 2.2fr [activities];
+        /* grid-template-rows: 1fr [photo] 0.3fr [header] 2fr [activities]; */
+    }  
+    .activities{
+        justify-content: space-between; 
+    }
+}
+
+
+/*-------------------------------------------------------------
+/*                          TABLETS  
+--------------------------------------------------------------*/ 
+
+@media screen and (max-width: 960px)
+{
+     .main-container{
+        /* background-color: rgb(7, 104, 43);  */
+        /* opacity: 80%;  */
+        /* display : grid; */
+        /* grid-template-rows: 0.7fr [photo] 0.2fr [header] 2fr [activities];  */
+    } 
+
+    .activities{
+        margin-top: 10px;
+        justify-content: space-around; 
+    }
+
+    .activity{
+        /* background-color:#E7E7E7 ; */
+        width: 40%;
+    }
+
+}
+
+/*-------------------------------------------------------------
+/*                          MOBILES 
+--------------------------------------------------------------*/ 
+
+@media screen and (max-width: 768px)
+{
+     .main-container{
+        /* background-color: rgb(243, 220, 87);   */
+        /* opacity: 80%;   */
+        grid-template-rows: 0.7fr [photo] 0.2fr [header] 2.7fr [activities];
+    } 
+
+    .activity{
+        width: 80%;
+        margin: 10px auto;
+ }
+
+ .newsletter{
+    margin-top: 0;
+    background-color: var(--color-gray);
+    width: 400px;
+ }
 }

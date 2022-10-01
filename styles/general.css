@@ -9,7 +9,7 @@
 }
 
 *{
-    border: 0;
+    border: none; 
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.activities button{
+button{
     font-family: roboto;
     background-color: var(--color-orange) ; 
     font-size: 20px;
@@ -27,30 +27,48 @@ html{
     border-radius: 20px;
 }
 
-.activities button:hover{
+button:hover{
     background-color: var(--color-darkorange) ; 
     color: var(--color-grayblue);
 }
 
 
 h1{
+    text-align: center;
     font-family: poppins;
     font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.6px;
+    color: var(--color-grayblue);
 }
 
 h2{
     font-family: roboto;
-    font-weight: 500; 
+    font-weight: 500;     
+    font-size: 24px;
+    letter-spacing: 0.6px;
 }
 
-h3, h4{
+h3{
     font-family : lora;
+    font-weight: 600;     
+    font-size: 18px;
+    letter-spacing: 0.8px;
 }
+
+/* h4{
+    font-family : lora;
+    font-weight: 400;  
+    font-style: italic;   
+    font-size: 16px;
+    letter-spacing: 0.5px; 
+} */
 
 p{
     font-family: lora;
     font-weight: 500;
     font-style: italic;
+    font-size: 16px;
     letter-spacing: 0.8px;
 }
 
