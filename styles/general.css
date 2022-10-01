@@ -1,16 +1,14 @@
 :root{
-    --color-grayblue: #E7E7E7;
+    --color-grayblue : #E7E7E7; 
     --color-black: #0a0a0c;
     --color-white: white;
     --color-darkblue: #485696;
     --color-orange: #fc7a1e;
     --color-darkorange: #F24C00;
+    --color-gray: gray;
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    outline: 0;
     border: 0;
     text-decoration: none;
     list-style: none;
@@ -23,15 +21,15 @@ html{
 
 .activities button{
     font-family: roboto;
-    background-color: #fc7a1e ; 
+    background-color: var(--color-orange) ; 
     font-size: 20px;
     padding: 5px 20px;
     border-radius: 20px;
 }
 
 .activities button:hover{
-    background-color: #F24C00 ; 
-    color: #E7E7E7;
+    background-color: var(--color-darkorange) ; 
+    color: var(--color-grayblue);
 }
 
 
@@ -45,22 +43,25 @@ h2{
     font-weight: 500; 
 }
 
-h3,h4{
-    font-family: 'Lora';
-    font-style: italic;
-    letter-spacing: 0.8px;
+h3, h4{
+    font-family : lora;
 }
 
 p{
     font-family: lora;
     font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.8px;
 }
 
 
 hr{
+    text-align: center;
     border: none;
     border-top: 5px #fc7a1e solid;
     width: 300px;
 }
+
+
 
 
