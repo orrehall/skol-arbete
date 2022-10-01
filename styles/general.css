@@ -1,8 +1,8 @@
 :root{
     --color-grayblue: #E7E7E7;
     --color-black: #0a0a0c;
+    --color-white: white;
     --color-darkblue: #485696;
-    --color-beige: #F9C784;
     --color-orange: #fc7a1e;
     --color-darkorange: #F24C00;
 }
@@ -56,5 +56,11 @@ p{
     font-weight: 500;
 }
 
+
+hr{
+    border: none;
+    border-top: 5px #fc7a1e solid;
+    width: 300px;
+}
 
 
