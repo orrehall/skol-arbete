@@ -6,7 +6,7 @@
     opacity: 80%;*/
     display: grid;
     min-height: 600px;
-    grid-template-rows: 80px [header] auto [main section] 200px [newsletter] 200px [footer];
+    grid-template-rows: 80px [header] auto [main-section] 200px [newsletter] 200px [footer];
     grid-auto-columns: 1fr;
 }
 
@@ -76,7 +76,7 @@ footer{
     height: auto; 
 }
 
-/*  -----------------------General structure of main section - Grid --------------------------------*/
+/*  ----------------------- General structure of main section - Grid --------------------------------*/
 
 .main-container h1{
     /* text-align: center; */
@@ -100,6 +100,8 @@ footer{
     color: var(--color-white);
 }
 
+/* Activity sections. Flex. */
+
 .activity{
     border: 1px solid var(--color-black); 
     background-color: var(--color-darkblue); 
@@ -110,7 +112,7 @@ footer{
     /* padding: 20px; */
     display: flex;
     flex-direction: column;
- }
+}
 
  .activity-picture{
     height: 100px;
@@ -157,7 +159,6 @@ footer{
 .newsletter h2{
     padding-top: 20px;
 }
-
 
  .newsletter button{
 /*     font-family: roboto;
