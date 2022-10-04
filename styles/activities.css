@@ -1,9 +1,7 @@
-/*  -----------------------General structure of whole page --------------------------------*/
+/*  ---------- General structure of the whole page ------------*/
 
 .container{
     width: 100%;
-    /* background-color: rgb(198, 247, 247); 
-    opacity: 80%;*/
     display: grid;
     min-height: 600px;
     grid-template-rows: 80px [header] auto [main-section] 200px [newsletter] 200px [footer];
@@ -13,18 +11,14 @@
 header{
     grid-row: 1/2;
     grid-column: 1/2;
-    /* border: 1px solid black;  */
-    margin-bottom: 20px;
     background-color: var(--color-darkblue);
 }
 
 .main-section{
     grid-row: 2/3;
     grid-column: 1/2;
+    margin-top: 20px;
     margin-bottom: 20px;
-    /* border: 1px solid black; */
-    /* background-image: url(../images/background1.jpg); */
-    /* background-size: cover; */
 }
 
 .newsletter{
@@ -39,7 +33,65 @@ footer{
     background-color : var(--color-darkblue);
 }
 
-/*  ----------------------- General structure of main section - Grid --------------------------------*/
+
+/*  ----------------------- Header ----------------------------*/
+
+.header-container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between; 
+    font-family: Lora;
+}
+
+.header-container .header-logo{
+    padding-inline-start: 10px;
+}
+
+.header-container .header-logo span{
+    color: var(--color-orange);
+}
+
+
+.header-container ul.header-menu{
+    display: flex;
+}  
+
+.header-container ul  li{
+    color: var(--color-black);
+    margin:  0 10px;    
+}
+
+.header-container ul li a.main-menu{
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 5px 10px 5px 10px;
+    background-color: var(--color-grayblue); 
+    border-radius: 20px;
+}
+
+.header-container ul  li.member a{
+    color: var(--color-black);
+    padding: 10px 15px 10px 15px;
+    background-color: var(--color-orange); 
+    border-radius: 20px;
+}
+
+.header-container ul li.dropdown-menu {
+    display: none;
+}
+
+.submenu{
+    display: none;
+}
+
+.header-container ul li a:hover{
+    background-color: var(--color-darkblue); 
+    color: var(--color-darkorange);   
+}  
+
+
+/*  ------------ General structure of main section - Grid -----*/
 
 .main-container{
     width: 100%;
@@ -54,7 +106,6 @@ footer{
 .activities-header-picture{
     grid-row: 1/2;
     grid-column: 1/2;
-    /* background-color: green; */
     background-image: url(../images/activities-picture1.JPG); 
     background-size: cover; 
 }
@@ -76,21 +127,19 @@ footer{
     height: auto; 
 }
 
-/*  ----------------------- General structure of main section - Grid --------------------------------*/
-
 .main-container h1{
-    /* text-align: center; */
     margin-top: 0;
     padding-top: 25px;
-    /* font-size: 36px; */
 }
 
 .main-container h2{
-    padding-top: 20px;
     text-align: center;
     font-family: roboto;
     font-weight: 500;
 }
+
+
+/* ----------------------Activity sections - Flex -----------*/
 
 .activities-header-picture h1, 
 .activities-header-picture h2,
@@ -100,8 +149,6 @@ footer{
     color: var(--color-white);
 }
 
-/* Activity sections. Flex. */
-
 .activity{
     border: 1px solid var(--color-black); 
     background-color: var(--color-darkblue); 
@@ -109,15 +156,13 @@ footer{
     width: 25%;
     text-align: center;
     margin: 2% 1%;
-    /* padding: 20px; */
     display: flex;
     flex-direction: column;
 }
 
- .activity-picture{
+.activity-picture{
     height: 100px;
     border-radius:  20px  20px 0  0;
-    /* background-color: #485696; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +183,7 @@ footer{
     letter-spacing: 0.8px;
 }
 
-/*  ----------------------- Newsletter section --------------------------------*/
+/*  ------------------ Newsletter section ---------------------*/
 
 .newsletter{
     background-color: var(--color-gray);
@@ -161,21 +206,11 @@ footer{
 }
 
  .newsletter button{
-/*     font-family: roboto;
-    background-color: var(--color-orange) ;  */
     height: 38px;
     border: none;
-/*     
-    font-size: 20px;
-    padding: 5px 20px; */
-
     border-radius: 0 20px 20px 0;
 
 }
-
-/* .newsletter button:hover{
-    background-color: var(--color-darkorange); 
-} */
 
 section.newsletter form input{
     width: 200px;
@@ -186,13 +221,56 @@ section.newsletter form input{
 }
 
 
-/*-------------------------------------------------------------
+
+/*  ----------------------- Footer  ---------------------------*/
+
+footer .footer-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer .footer-container ul li a{
+    color:black ;
+    padding: 5px 10px 5px 10px;
+}
+
+footer .footer-container ul li.list a:hover{
+    color:white ;
+}
+
+footer .footer-container ul{
+    padding-inline-start: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer .footer-container ul li{
+    font-size: Lora;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+footer .footer-container ul li.list-title{
+    font-size: poppins;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+/**************************************************************
 *************************   MEDIA QUERIES  ********************
+***************************************************************/
+
+/*-------------------------------------------------------------
+/*                         Large desktops
 --------------------------------------------------------------*/
+
 @media screen and (min-width: 1200px)
 {
     .main-container{
-        /* background-color: rgb(208, 169, 245);  */
         width: 80%; 
         grid-template-rows: 1fr [photo] 0.3fr [header] 2fr [activities];
     }  
@@ -206,11 +284,11 @@ section.newsletter form input{
 @media screen and (max-width: 1200px)
 {
     .main-container{
-        /* background-color: rgb(208, 169, 245);   */
-        /* width: 90%;  */
+        width: 90%;
         grid-template-rows: 0.8fr [photo] 0.3fr [header] 2.2fr [activities];
         /* grid-template-rows: 1fr [photo] 0.3fr [header] 2fr [activities]; */
     }  
+
     .activities{
         justify-content: space-between; 
     }
@@ -223,10 +301,7 @@ section.newsletter form input{
 
 @media screen and (max-width: 960px)
 {
-     .main-container{
-        /* background-color: rgb(7, 104, 43);  */
-        /* opacity: 80%;  */
-        /* display : grid; */
+     .main-container{   
         /* grid-template-rows: 0.7fr [photo] 0.2fr [header] 2fr [activities];  */
     } 
 
@@ -236,10 +311,62 @@ section.newsletter form input{
     }
 
     .activity{
-        /* background-color:#E7E7E7 ; */
         width: 40%;
     }
 
+
+    /*-------------------------  Header ---------------------*/
+
+    .header-container ul li.main-menu {
+        display: none;
+    }
+
+    .header-container ul.header-menu{
+        align-items: center;
+    }
+
+    .header-container ul li.dropdown-menu{
+        display: block;
+        position: relative;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .submenu{
+        display: none;
+        position: absolute;
+        background-color: #485696;
+        top: 50px;
+        left: -120px;
+        min-width: 200px;
+        height: 150px;
+        margin: auto;
+        padding-top: 15px; 
+    }
+
+    .header-container ul li.dropdown-menu:hover .submenu {
+        display: block;
+    
+    }
+
+    .content li {
+        padding-bottom: 10px;
+    }
+
+    .content li a{
+        text-align: center;
+        color: var(--color-black);
+        font-size: 15px;
+        width: 100%;
+        padding: 5px 30px 5px 10px;
+    }
+
+
+    .dropdown-menu .submenu .content li a:hover{
+        background-color: var(--color-darkblue); 
+        color: var(--color-orange);  
+    }
 }
 
 /*-------------------------------------------------------------
@@ -249,19 +376,26 @@ section.newsletter form input{
 @media screen and (max-width: 768px)
 {
      .main-container{
-        /* background-color: rgb(243, 220, 87);   */
-        /* opacity: 80%;   */
-        grid-template-rows: 0.7fr [photo] 0.2fr [header] 2.7fr [activities];
+        grid-template-rows: auto [photo] auto [header] auto [activities];
     } 
 
-    .activity{
-        width: 80%;
-        margin: 10px auto;
- }
+    .activities-header-picture
+    {
+        min-height: 250px;
+    }
 
- .newsletter{
-    margin-top: 0;
-    background-color: var(--color-gray);
-    width: 400px;
- }
+    .activities-header{
+        max-height: 100px;
+    }
+
+    .activity{
+            width: 80%;
+            margin: 10px auto;
+    }
+
+    .newsletter{
+        margin-top: 0;
+        background-color: var(--color-gray);
+        width: 400px;
+    }
 }
