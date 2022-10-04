@@ -198,7 +198,6 @@ footer{
 .newsletter form{
     display: flex;
     justify-content: center;
-
 }
 
 .newsletter h2{
@@ -219,7 +218,6 @@ section.newsletter form input{
     border-radius: 20px 0 0 20px;
     padding-left: 10px;
 }
-
 
 
 /*  ----------------------- Footer  ---------------------------*/
