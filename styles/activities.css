@@ -130,12 +130,20 @@ footer{
 .main-container h1{
     margin-top: 0;
     padding-top: 25px;
+    text-shadow: 2px 2px var(--color-black);
 }
 
 .main-container h2{
     text-align: center;
     font-family: roboto;
     font-weight: 500;
+}
+
+.main-container h2.header-activity{
+    text-align: center;
+    font-family: roboto;
+    font-weight: 500;
+    text-shadow: 2px 2px var(--color-black);
 }
 
 
