@@ -153,6 +153,10 @@ footer{
     color: var(--color-white);
 }
 
+.homepage-header-picture h2.header-activity{
+    text-shadow: 2px 2px var(--color-black);
+}
+
 .homepage-header h2, h3{
     text-align: center;
 }
