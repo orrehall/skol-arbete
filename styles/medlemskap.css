@@ -44,7 +44,7 @@ body {
     font-size: 22px;
 }
 
-.arrow-button{
+.arrow{
     width: 65px;
 }
 
@@ -266,12 +266,41 @@ body {
 
 @media screen and (min-width: 1200px)
 {
+    
+    .medlem-content-container{
+        margin: 0 auto;
+        max-width: 990px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 60%;
+        height: 270px;
+    }
+
+    .medlem-val-top-2{
+        border-top: 70px solid var(--color-grayblue);
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 40px;
+        width: 60%;
+        position: relative;
+        margin: auto
+    }
+
+    .medlem-content-container-2{
+        margin: 0 auto;
+        max-width: 990px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 40%;
+        height: 600px;
+    }
+
     .medlem-val-2-top-2{
         border-top: 70px solid --color-darkblue;
         border-left: 25px solid transparent;
         border-right: 25px solid transparent;
         height: 40px;
-        width: 55%;
+        width: 50%;
         position: relative;
         margin: auto
     }
