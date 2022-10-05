@@ -277,7 +277,7 @@ footer .footer-container ul li.list-title{
 @media screen and (min-width: 1200px)
 {
     .main-container{
-        width: 80%; 
+        width:100%; 
         grid-template-rows: 1fr [photo] 0.3fr [header] 2fr [activities];
     }  
 
@@ -290,7 +290,7 @@ footer .footer-container ul li.list-title{
 @media screen and (max-width: 1200px)
 {
     .main-container{
-        width: 90%;
+        width: 100%;
         grid-template-rows: 0.8fr [photo] 0.3fr [header] 2.2fr [activities];
         /* grid-template-rows: 1fr [photo] 0.3fr [header] 2fr [activities]; */
     }  
