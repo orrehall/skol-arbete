@@ -18,7 +18,7 @@ body {
     position: absolute;
     top: 55%;
     left: 50%;
-    color:white;
+    color: var(--color-white);
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 700;
@@ -120,10 +120,15 @@ body {
     flex: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    color: white;
+    color: var(--color-white);
 }
-.flex-item-age-3 {
-    padding-bottom: 20px;
+
+.flex-item-age-price{
+    position:relative;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 10px;
+    transform: rotate(-4deg);
 }
 
 /* BACKGROUND STYLE 2 ============================*/
@@ -134,7 +139,7 @@ body {
     padding: 5px;
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--color-white);
 }
 
 .header-line-3{
@@ -164,7 +169,7 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     width: 40%;
-    height: 350px;
+    height: 500px;
 }
 
 
@@ -181,14 +186,14 @@ body {
 }
 
 .grid-item-type-standard {
-    background-color: white;
-    border: solid 5px black;
+    background-color: var(--color-white);
+    border: solid 5px var(--color-black);
     border-radius: 10px;
 }
 
 .grid-item-type-plus {
-    background-color: white;
-    border: solid 5px #fc7a1e;
+    background-color: var(--color-white);
+    border: solid 5px var(--color-orange);
     border-radius: 10px;
 }
 
@@ -204,7 +209,7 @@ body {
 }
 
 .header-line-5{
-    color:#fc7a1e;
+    color:var(--color-orange);
     border-style: solid;
     width: 150px;
     height: 2px;
@@ -215,10 +220,10 @@ body {
 }
 
 .plus-icon{
-    max-width: 8%
+    max-width: 8%;
 }
 
-/* Flexbox ============================*/
+/* Flexbox 2 ============================*/
 
 .flex-container-type {
     display: flex;
@@ -230,7 +235,7 @@ body {
     flex: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    color: black;
+    color: var(--color-black);
 }
 
 .flex-item-type-2 {
@@ -239,16 +244,21 @@ body {
 }
 
 .text-decoraion{
-    text-decoration: line-through black;
-    color: grey;
+    text-decoration: line-through var(--color-black);
+    color: var(--color-gray);
 }
 
 .checkmark-icon{
     max-width: 8%;
 }
 
-.flex-item-type-3 {
-    padding-bottom: 20px;
+.flex-item-type-price{
+    position:relative;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 20px;
+    transform: rotate(-5deg);
+    color: var(--color-black);
 }
 
 
@@ -297,7 +307,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 60%;
-        height: 350px;
+        height: 500px;
     }
     
 }
@@ -312,7 +322,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 50%;
-        height: 470px;
+        height: 520px;
     }
     
     .grid-container-age{
@@ -331,7 +341,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 60%;
-        height: 350px;
+        height: 500px;
     }
 }
 
@@ -344,8 +354,8 @@ body {
         max-width: 990px;
         padding-left: 25px;
         padding-right: 25px;
-        width: 70%;
-        height: 800px;
+        width: 50%;
+        height: 1000px;
     }
     
     .grid-container-age{
@@ -364,11 +374,11 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 70%;
-        height: 350px;
+        height: 1100px;
     }
 
     .medlem-val-2-top-2{
-        border-top: 70px solid --color-darkblue;
+        border-top: 70px solid var(--color-darkblue);
         border-left: 25px solid transparent;
         border-right: 25px solid transparent;
         height: 40px;
