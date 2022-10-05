@@ -164,7 +164,7 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     width: 40%;
-    height: 350px;
+    height: 450px;
 }
 
 
@@ -218,7 +218,7 @@ body {
     max-width: 8%
 }
 
-/* Flexbox ============================*/
+/* Flexbox 2 ============================*/
 
 .flex-container-type {
     display: flex;
@@ -297,7 +297,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 60%;
-        height: 350px;
+        height: 450px;
     }
     
 }
@@ -331,7 +331,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 60%;
-        height: 350px;
+        height: 450px;
     }
 }
 
@@ -364,7 +364,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         width: 70%;
-        height: 350px;
+        height: 1000px;
     }
 
     .medlem-val-2-top-2{
