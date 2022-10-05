@@ -8,10 +8,10 @@ body {
 /* BANNER ============================*/
 .banner {
     position: relative;
-    background: url(images/banner.png) center;
     background-size: cover;
     height: 270px;
     overflow: hidden;
+    background: url(../images/banner.png) center;
 }
 
 .banner-container {
@@ -102,7 +102,7 @@ body {
 }
 
 .grid-item-age {
-    background-color: --color-darkblue;
+    background-color: var(--color-darkblue);
     border: 10px;
     border-radius: 10px;
     width: 1fr 1fr 1fr 1fr;
@@ -129,7 +129,7 @@ body {
 /* BACKGROUND STYLE 2 ============================*/
 
 .medlem-val-2-top{
-    background: (var)--color-darkblue;
+    background: var(--color-darkblue);
     overflow: hidden;
     padding: 5px;
     position: relative;
@@ -138,7 +138,7 @@ body {
 }
 
 .header-line-3{
-    color:(var)--color-orange;
+    color:var(--color-orange);
     border-style: solid;
     width: 250px;
     height: 2px;
@@ -149,7 +149,7 @@ body {
 }
 
 .medlem-val-2-top-2{
-    border-top: 70px solid --color-darkblue;
+    border-top: 70px solid var(--color-darkblue);
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	height: 40px;
