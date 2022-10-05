@@ -25,6 +25,7 @@ button{
     font-size: 20px;
     padding: 5px 20px;
     border-radius: 20px;
+    text-transform:uppercase
 }
 
 button:hover{
