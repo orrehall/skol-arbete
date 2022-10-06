@@ -1,8 +1,44 @@
 
+/* *************************************************************************************************************************** */
+/*Header, footer + h1*/
+
+/*anpassar header lite för att funka med min kod*/
+.container{
+    min-width: 768px;
+    min-height:100px;
+    margin-bottom: -150px;
+    
+}
+
+/*anpassar footer lite för att funka med min kod*/
+footer .footer-container{
+    min-width: 768px;
+justify-content: space-between;
+background-color: var(--color-darkblue);
+}
+
+.om-oss-header{
+    display: grid;
+   max-width: 768px;
+   min-width: 765px;
+   height: 100px;
+   margin:10px auto;
+   grid-template-columns: 1fr;
+   grid-template-rows: 50px;
+   background-color: var(--color-grayblue);
+}
+
+h1{
+    color: var(--color-black);
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+/* ****************************************************************************************************************************** */
+
 /**MAIN GRID CONTAINER**/
 .container-om-oss{
-    width: 768px; /*pga vi vill anpassa hemsidan efter mobile first*/
-    min-height: 1500px;
+    min-width: 768px; /*pga vi vill anpassa hemsidan efter mobile first*/
+    min-height: 1850px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10,11 +46,14 @@
     column-gap: 2%;
     row-gap: 2%;
     padding: 10px;
-    margin:  auto;
+    margin: 20px auto;
 
 }
 
-/*GRID INOM GRID-------------------------------------------------------------------*/
+/* ****************************************************************************************************************************** */
+/*GRID INOM GRID-*/
+/* ****************************************************************************************************************************** */
+
 #section-om-oss1,
 #section-om-oss2,
 #section-om-oss3{
@@ -56,49 +95,90 @@ margin-left: 5px;
     background-color: var(--color-grayblue);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    grid-row:2/3;
     padding-left: 15px;
     padding-right: 15px;
+    grid-row:2/3;
+
 }
 
+/* ****************************************************************************************************************************** */
 /* Grid med img---------------------------------------------------------------------------------------------------------------------- */
-.img,
-#img2{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+/* ****************************************************************************************************************************** */
+
+#om-oss-img,
+#om-oss-img3{
+    margin-left:10px;
+}
+
+#om-oss-img2{
+    margin-right: 10px;
+}
+
+#om-oss-img,
+#om-oss-img2,
+#om-oss-img3{
+    height: 97%;
+    width: 100%;
+    border-radius: 20px;
     margin-top: 20px;
-}
-
-.img{
-    margin-right: 5px;
-}
-
-#img2{
-    margin-left:5px;
+    
 }
 
 #om-oss-img{
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    
+    grid-row: 1/2;
+    grid-column: 2/3;
+
 }
+
+
+#om-oss-img2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#om-oss-img3{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+
+
+
 
 /**************************************************************************************************************************************/
 /*Tablets*/
 /**************************************************************************************************************************************/
 @media screen and (min-width:768px){
+    .container,
+    .footer-container{
+       min-width: 90%;
+    }
+
     .container-om-oss{
-        width: 886px;
+        width: 768px;
         padding: 10px;
     }
 
+    .om-oss-header{
+       width: 886px;
+    }
     #section-om-oss1,
     #section-om-oss2,
     #section-om-oss3{
         grid-template-rows: 0.5fr 4fr;
     }
+
+    #om-oss-img,
+    #om-oss-img3{
+        padding-right: 10px;
+    }
+    
+    #om-oss-img2{
+        padding-left:10px ;
+    }
+
+
+
     p{
         font-size: 20px;
     }
@@ -107,33 +187,38 @@ margin-left: 5px;
         font-size: 22px;
     }
 
-    .img{
-        margin-right: 5px;
-    }
-    
-    #img2{
-        margin-left:5px;
-    }
+  
 
     #section-om-oss1,
     #section-om-oss3{
-    margin-left: 1px;
+    margin-left: 2px;
     }
     
     #section-om-oss2{
-        margin-right:1px;
+        margin-right:2px;
     }
 }
 
+
+/* ****************************************************************************************************************************** */
+                                        /* MEDIA QUERY */
 /************************************************************************************************************************************/
-/*Small desktops*/
+                                        /*Small desktops*/
 /************************************************************************************************************************************/
 
 @media screen and (min-width:960px) {
-    .container-om-oss{
-        width: 960px;
-        padding: 10px;
+
+    .container{
+        width:99%;
     }
+
+    .footer-container{
+        width:99%;
+    }
+
+    .container-om-oss{
+        width: 960px;   
+         }
 
 
     #section-om-oss1,
@@ -151,12 +236,16 @@ margin-left: 5px;
         font-size: 25px;
     }
 
-    .img{
+   
+    #om-ossimg,
+    #om-oss-img3{
         margin-right: 1px;
+
     }
     
-    #img2{
+    #om-ossimg2{
         margin-left:1px;
+
     }
 
       
@@ -175,9 +264,17 @@ margin-left: 5px;
 /*Large desktops*/
 /************************************************************************************************************************************/
 @media screen and (min-width:1200px)
-
 {
-.container-om-oss{
+    .container
+    {
+        width: 99.5%;
+    }
+
+    .footer-container{
+        width: 90%;
+    }
+
+    .container-om-oss{
     width: 1200px;
     padding: 10px;
 }
@@ -185,6 +282,7 @@ margin-left: 5px;
     #section-om-oss2,
     #section-om-oss3{
         grid-template-rows: 0.2fr 1fr;
+        padding-bottom: 20px;
 
 
     }
@@ -198,11 +296,12 @@ margin-left: 5px;
         font-size: 25px;
     }
 
-    .img{
+    #om-ossimg,
+    #om-oss-img3{
         margin-right: 1px;
     }
     
-    #img2{
+    #om-ossimg2{
         margin-left:1px;
     }
 
@@ -216,3 +315,6 @@ margin-left: 1px;
     margin-right:1px;
 }
 }
+
+
+
