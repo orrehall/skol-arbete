@@ -237,12 +237,12 @@ footer .footer-container{
 }
 
 footer .footer-container ul li a{
-    color:black ;
+    color:var(--color-black) ;
     padding: 5px 10px 5px 10px;
 }
 
 footer .footer-container ul li.list a:hover{
-    color:white ;
+    color:var(--color-white) ;
 }
 
 footer .footer-container ul{
@@ -307,11 +307,7 @@ footer .footer-container ul li.list-title{
 
 @media screen and (max-width: 960px)
 {
-     .main-container{   
-        /* grid-template-rows: 0.7fr [photo] 0.2fr [header] 2fr [activities];  */
-    } 
- 
-    .activities{
+     .activities{
         margin-top: 10px;
         justify-content: space-around; 
     }
