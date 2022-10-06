@@ -238,7 +238,7 @@ footer .footer-container ul li.list-title{
  @media screen and (min-width: 1200px)
 {
     .main-container{
-        width: 100%; 
+        /* width: 100%;  */
         grid-template-rows: 1.5fr [photo] 0.3fr [header] 1fr [activities];
     }
 
@@ -256,7 +256,7 @@ footer .footer-container ul li.list-title{
 
 {
     .main-container{
-        width: 100%; 
+        /* width: 100%;  */
         grid-template-rows: 1.5fr [photo] 0.3fr [header] 1fr [activities];
     }
 
@@ -274,7 +274,7 @@ footer .footer-container ul li.list-title{
 @media screen and (max-width: 1040px)
 {
     .main-container{
-        width: 100%; 
+        /* width: 100%;  */
         grid-template-rows: 0.7fr [photo] 0.2fr [header] 2fr [activities]; 
     } 
 
