@@ -197,12 +197,12 @@ footer .footer-container{
 }
 
 footer .footer-container ul li a{
-    color:black ;
+    color:var(--color-black) ;
     padding: 5px 10px 5px 10px;
 }
 
 footer .footer-container ul li.list a:hover{
-    color:white ;
+    color:var(--color-white) ;
 }
 
 footer .footer-container ul{
