@@ -1,0 +1,218 @@
+
+/**MAIN GRID CONTAINER**/
+.container-om-oss{
+    width: 768px; /*pga vi vill anpassa hemsidan efter mobile first*/
+    min-height: 1500px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2%;
+    row-gap: 2%;
+    padding: 10px;
+    margin:  auto;
+
+}
+
+/*GRID INOM GRID-------------------------------------------------------------------*/
+#section-om-oss1,
+#section-om-oss2,
+#section-om-oss3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    margin-top: 20px;
+}
+
+.om-oss-p{
+    font-size: 19px;
+}
+
+
+#section-om-oss1,
+#section-om-oss3{
+margin-left: 5px;
+}
+
+#section-om-oss2{
+    margin-right:5px;
+}
+
+#header-om-oss1,
+#header-om-oss2,
+#header-om-oss3{
+    background-color: var(--color-darkblue);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: var(--color-white);
+    grid-row: 1/2;
+    
+
+}
+
+#om-oss-text-box1,
+#om-oss-text-box2,
+#om-oss-text-box3{
+    background-color: var(--color-grayblue);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    grid-row:2/3;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Grid med img---------------------------------------------------------------------------------------------------------------------- */
+.img,
+#img2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+}
+
+.img{
+    margin-right: 5px;
+}
+
+#img2{
+    margin-left:5px;
+}
+
+#om-oss-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+/**************************************************************************************************************************************/
+/*Tablets*/
+/**************************************************************************************************************************************/
+@media screen and (min-width:768px){
+    .container-om-oss{
+        width: 886px;
+        padding: 10px;
+    }
+
+    #section-om-oss1,
+    #section-om-oss2,
+    #section-om-oss3{
+        grid-template-rows: 0.5fr 4fr;
+    }
+    p{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    .img{
+        margin-right: 5px;
+    }
+    
+    #img2{
+        margin-left:5px;
+    }
+
+    #section-om-oss1,
+    #section-om-oss3{
+    margin-left: 1px;
+    }
+    
+    #section-om-oss2{
+        margin-right:1px;
+    }
+}
+
+/************************************************************************************************************************************/
+/*Small desktops*/
+/************************************************************************************************************************************/
+
+@media screen and (min-width:960px) {
+    .container-om-oss{
+        width: 960px;
+        padding: 10px;
+    }
+
+
+    #section-om-oss1,
+    #section-om-oss2,
+    #section-om-oss3{
+        grid-template-rows: 0.4fr 3fr;
+    }
+
+    p{
+        font-size:22px;
+    }
+
+    h2{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+
+    .img{
+        margin-right: 1px;
+    }
+    
+    #img2{
+        margin-left:1px;
+    }
+
+      
+    #section-om-oss1,
+    #section-om-oss3{
+    margin-left: 1px;
+    }
+
+    #section-om-oss2{
+    margin-right:1px;
+}
+
+}
+
+/************************************************************************************************************************************/
+/*Large desktops*/
+/************************************************************************************************************************************/
+@media screen and (min-width:1200px)
+
+{
+.container-om-oss{
+    width: 1200px;
+    padding: 10px;
+}
+    #section-om-oss1,
+    #section-om-oss2,
+    #section-om-oss3{
+        grid-template-rows: 0.2fr 1fr;
+
+
+    }
+
+    p{
+        font-size:22px;
+    }
+
+    h2{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+
+    .img{
+        margin-right: 1px;
+    }
+    
+    #img2{
+        margin-left:1px;
+    }
+
+    
+#section-om-oss1,
+#section-om-oss3{
+margin-left: 1px;
+}
+
+#section-om-oss2{
+    margin-right:1px;
+}
+}
