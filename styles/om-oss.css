@@ -42,7 +42,7 @@ body{
 }
 .container-om-oss{
     min-width: 768px; /*pga vi vill anpassa hemsidan efter mobile first*/
-    min-height: 1850px;
+    min-height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
