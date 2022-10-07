@@ -35,6 +35,11 @@ h1{
 /* ****************************************************************************************************************************** */
 
 /**MAIN GRID CONTAINER**/
+
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .container-om-oss{
     min-width: 768px; /*pga vi vill anpassa hemsidan efter mobile first*/
     min-height: 1850px;
@@ -167,14 +172,15 @@ margin-left: 5px;
         grid-template-rows: 0.5fr 4fr;
     }
 
-    #om-oss-img,
-    #om-oss-img3{
-        padding-right: 10px;
+    #section-om-oss1,
+    #section-om-oss3{
+    margin-left: 5px;
     }
     
-    #om-oss-img2{
-        padding-left:10px ;
+    #section-om-oss2{
+        margin-right:5px;
     }
+    
 
 
 
